@@ -1,0 +1,33 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.6.33815.320
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "N2", "N2", "{CA561BA3-3927-443A-BCFB-E20D60CC0C0D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Hometask", "Hometask", "{50FEE06E-FB02-47D2-838C-5A47FFC39E69}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tasks", "Tasks\Tasks.csproj", "{20A1F023-10CC-451B-B94C-4009B826C19B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{20A1F023-10CC-451B-B94C-4009B826C19B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{20A1F023-10CC-451B-B94C-4009B826C19B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{20A1F023-10CC-451B-B94C-4009B826C19B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{20A1F023-10CC-451B-B94C-4009B826C19B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{50FEE06E-FB02-47D2-838C-5A47FFC39E69} = {CA561BA3-3927-443A-BCFB-E20D60CC0C0D}
+		{20A1F023-10CC-451B-B94C-4009B826C19B} = {50FEE06E-FB02-47D2-838C-5A47FFC39E69}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {60479256-63AA-4F53-B3BD-0EB4E5F0DF04}
+	EndGlobalSection
+EndGlobal
