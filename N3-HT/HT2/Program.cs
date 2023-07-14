@@ -24,7 +24,7 @@ for (int i = 0; i < mail.Length; i++)
     {
         recommendation += mail[i];
     }
-    else 
+    else
     {
         error = true;
         emailErrors += mail[i];
