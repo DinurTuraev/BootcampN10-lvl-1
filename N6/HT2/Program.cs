@@ -12,11 +12,11 @@ names[0] = "Jo'rabek";
 names[1] = "Og'abek";
 names[2] = "Otabek";
 names[3] = "Dostonbek";
-points[4] = "Javlonbek";
+names[4] = "Javlonbek";
 
-Console.WriteLine(points.Max);
-Console.WriteLine(points.Average);
-Console.WriteLine(points.Min);
+Console.WriteLine(points.Max());
+Console.WriteLine(points.Average());
+Console.WriteLine(points.Min());
 int count80 = 0;
 int count90 = 0;
 for (int i = 0; i < points.Length; i++)
@@ -30,20 +30,28 @@ for (int i = 0; i < points.Length; i++)
     }
 }
 
-Console.WriteLine($"80 dan baland ball olganlar {count80}");
-Console.WriteLine($"90 dan baland ball olganlar {count90}");
+Console.WriteLine($"80 dan baland ball olganlar {count80} ta");
+Console.WriteLine($"90 dan baland ball olganlar {count90} ta");
 
 for (int i = 0; i < points.Length-1; i++)
 {
     for (int j = i + 1; j < points.Length; j++)
     {
-        int index = points[j];
-        names[j], points[j] = points[i];
-        names[i], points[i] = index;
+        if (points[j] > points[i])
+        {
+            int index = points[j];
+            string indexb = names[j];
+
+            points[j] = points[i];
+            points[i] = index;
+
+            names[j] = names[i];
+            names[i] = indexb;
+        }
     }
 }
 
 for (int i = 0;i < points.Length; i++)
 {
-    Console.WriteLine($"{names[i]} - {points[i]}")
+    Console.WriteLine($"{names[i]} - {points[i]}");
 }
